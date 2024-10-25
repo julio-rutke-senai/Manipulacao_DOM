@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            window.onload = function(){
+                var heading = document.createElement("h1");
+                var text = document.createTextNode("Cabeçalho");
+                heading.appendChild(text);
+                document.body.appendChild(heading);
+
+                var lista = document.createElement("ol");
+                document.body.appendChild(lista);
+
+                var button = document.createElement("button");
+                textButton = document.createTextNode("Clique aqui");
+                button.appendChild(textButton);
+
+                document.body.appendChild(button)
+
+                button.addEventListener("click", function(event){
+                    heading.style.color = "#756"
+                    window.alert("OK")
+                    console.log("Clicou")
+                })
+            }
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
